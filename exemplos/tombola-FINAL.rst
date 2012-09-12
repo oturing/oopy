@@ -25,7 +25,7 @@ Sem misturar, o "sorteio" simplesmente devolve o último item colocado::
 O método `Tombola.misturar` corresponde a girar a manivela do globo, ou
 sacudir bem o saco::
 
-  >>> t.misturar()
+  >>> t.misturar() 
   >>> t.sortear() # doctest:+SKIP
   1
 

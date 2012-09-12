@@ -1,0 +1,32 @@
+
+Ao buscar o.a (atributo a do objeto o da classe C), o interpretador Python faz o seguinte:
+
+1) acessa o atributo a da instancia o
+
+caso nao exista...
+
+2) acessa o atributo a da classe C de o (type(o) ou o.__class__)
+
+caso nao exista...
+
+3) acessa o atributo o na primeira superclasse de C, conforme a MRO (method resolution order)
+
+
+class Sequence(Container, Sized, Iterable)
+
+
+
+class SaoBernardo(Cao):
+
+class SaoBernardo(Cao, Barril):
+
+video: stop mocking, start testing
+
+
+
+
+
+
+
+
+

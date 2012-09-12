@@ -22,6 +22,5 @@ class TestarUsosBasicos(unittest.TestCase):
         res = self.tombola.sortear()
         self.assertEqual(res, itens[0])
 
-
 if __name__ == '__main__':
     unittest.main()
