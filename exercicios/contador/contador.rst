@@ -235,7 +235,9 @@ método, que deverá devolver um ``float`` com a porcentagem::
 
 Nos exemplos as seguir, arrendondamos os resultados para evitar variações na
 representação de ``float`` em diferentes plataformas, conforme a dica na
-`documentação do módulo Doctest`_.
+`documentação do módulo Doctest`_. 
+
+::
 
     >>> round(ct.porcentagem('n'), 1)
     33.3
