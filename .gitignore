@@ -32,3 +32,5 @@ _build
 #PyCharm
 .idea
 
+#Java
+*.class

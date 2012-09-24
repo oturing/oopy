@@ -7,11 +7,11 @@ Código inicial usado na Lista de Exercícios 1 do curso
 
 class Contador(object):
     def __init__(self):
-        self.totais = {}
-        
-    def contar(self, item):
-        qtd = self.totais.get(item, 0) + 1
-        self.totais[item] = qtd
+        self.ocorrencias = {}
+
+    def incrementar(self, item):
+        qtd = self.ocorrencias.get(item, 0) + 1
+        self.ocorrencias[item] = qtd
 
     def contagem(self, item):
-        return self.totais[item]
+        return self.ocorrencias[item]

@@ -61,7 +61,7 @@ solução passo a passo.
 Para executar os testes deste arquivo com o ``testar_doc.py``, faça assim::
 
     $ python testar_doc.py contador.rst
-    
+
 Dica: na prática, eu costumo incluir um comando ``clear`` para limpar a tela
 do shell antes de rodar os testes, assim::
 
@@ -79,7 +79,7 @@ Dicas de implementação
 ----------------------
 
 Ao resolver estes exercícios, dedique alguns minutos a pensar como você
-implementaria cada solução antes de ler as dicas de implementação. 
+implementaria cada solução antes de ler as dicas de implementação.
 
 Se você encontrar uma forma melhor de implementar, ou quiser discutir
 alternativas, mande suas idéias para o `grupo de discussão Oficinas
@@ -88,7 +88,7 @@ Turing`_.
 Extra
 -----
 
-Alguns exercícios têm uma seção intitulada **Extra** com sugestões de 
+Alguns exercícios têm uma seção intitulada **Extra** com sugestões de
 atividades adicionais para você fazer, se quiser e puder.
 
 
@@ -107,7 +107,7 @@ O módulo `contador.py`_ contém a implementação de uma classe ``Contador``.
 
 .. _contador.py: https://github.com/oturing/oopy/blob/master/exercicios/contador/contador.py
 
-Instâncias da classe ``Contador`` servem para contar itens, por exemplo, 
+Instâncias da classe ``Contador`` servem para contar itens, por exemplo,
 contar as ocorrências de determinadas palavras em um texto.
 
 Veja podemos usar um contador para contar as vogais em uma palavra::
@@ -116,7 +116,7 @@ Veja podemos usar um contador para contar as vogais em uma palavra::
     >>> c = Contador()
     >>> for letra in 'abacaxi':
     ...     if letra in 'aeiou':
-    ...         c.contar(letra)
+    ...         c.incrementar(letra)
     >>> c.contagem('a')
     3
     >>> c.contagem('i')
@@ -131,13 +131,13 @@ pedimos a contagem de um item que não foi contado nenhuma vez::
     KeyError: 'u'
 
 Antes de prosseguir para o Exercício 1.2, leia o código-fonte da classe
-contador no módulo `contador.py` e entenda seu funcionamento. 
+contador no módulo `contador.py` e entenda seu funcionamento.
 
 Além disso, baixe os arquivos indicados em `Material necessário`_ para um
 diretório local, e execute os testes, assim::
 
     $ python testar_doc.py contador.rst
-    
+
 O resultado será a exibição de uma falha, mais ou menos assim::
 
     **********************************************************************
@@ -171,7 +171,7 @@ Extra
 Leia a implementação do script ``testar_doc.py``. É um exemplo simples de uso
 da API do módulo Doctest.
 
-Exercício 1.2: o contador amigável 
+Exercício 1.2: o contador amigável
 ===================================
 
 Sua primeira missão é desenvolver um contador mais tolerante, batizado de
@@ -182,18 +182,18 @@ item nunca foi contado::
 
     >>> ca = ContadorAmigavel()
     >>> for letra in 'abc':
-    ...    ca.contar(letra)
+    ...    ca.incrementar(letra)
     >>> ca.contagem('a')
     1
     >>> ca.contagem('z')
     0
-    
+
 Dica de implementação
 ---------------------
 
 Implemente o ``ContadorAmigo`` como uma subclasse de ``Contador`` que apenas
 sobrescreve o método ``contagem``.
-    
+
 Exercício 1.3: o contador totalizador
 =====================================
 
@@ -206,7 +206,7 @@ Exemplo de uso::
 
     >>> ct = ContadorTotalizador()
     >>> for letra in 'banana':
-    ...    ct.contar(letra)
+    ...    ct.incrementar(letra)
     >>> ct.total
     6
 
@@ -219,9 +219,10 @@ de ``Contador`` no inicializador de ``ContadorTotalizador``. Em geral, é uma
 boa prática invocar o inicializador da superclasse antes de fazer qualquer
 coisa no inicializdor da subclasse.
 
-Também será necessário sobrescrever o método ``contar`` para incrementar o
-``total``. Novamente, não esqueça de aproveitar o código do método
-``Contador.contar``, invocando-o no início da sua implementação de contar.
+Também será necessário sobrescrever o método ``incrementar`` para atualizar
+ o ``total``. Novamente, não esqueça de aproveitar o código do método
+``Contador.incrementar``, invocando-o no início da sua implementação de
+``incrementar``.
 
 Exercício 1.4: melhorando o contador totalizador
 ================================================
@@ -235,7 +236,7 @@ método, que deverá devolver um ``float`` com a porcentagem::
 
 Nos exemplos as seguir, arrendondamos os resultados para evitar variações na
 representação de ``float`` em diferentes plataformas, conforme a dica na
-`documentação do módulo Doctest`_. 
+`documentação do módulo Doctest`_.
 
 ::
 
@@ -244,7 +245,7 @@ representação de ``float`` em diferentes plataformas, conforme a dica na
     >>> round(ct.porcentagem('b'), 1)
     16.7
 
-.. _documentação do módulo Doctest: http://docs.python.org/library/doctest.html#warnings    
+.. _documentação do módulo Doctest: http://docs.python.org/library/doctest.html#warnings
 
 Dica de implementação
 ---------------------
@@ -264,13 +265,13 @@ Exercício 1.5: o contador totalizador amigável
 ==============================================
 
 Usando herança múltipla, implemente uma classe que combina as caracerísticas
-do ``ContadorTotalizador`` e ``ContadorAmigavel``. 
+do ``ContadorTotalizador`` e ``ContadorAmigavel``.
 
 Ela deve funcionar assim::
 
     >>> cta = ContadorTotalizadorAmigavel()
     >>> for letra in 'laranja':
-    ...    cta.contar(letra)
+    ...    cta.incrementar(letra)
     >>> cta.total
     7
     >>> cta.contagem('a')
