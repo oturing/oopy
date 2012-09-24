@@ -1,6 +1,6 @@
-================================================================
-Lista 1: Contador e derivações: um exercício de herança múltipla
-================================================================
+==========================================
+Lista 2: Variações sobre o tema da tômbola
+==========================================
 
 .. contents:: Sumário
 
@@ -23,12 +23,15 @@ arquivos que estão no diretório `exercicios/tombola`_ no repositório
 * ``tombola.py``: o ponto de partida do exercício; copie e edite sua cópia
   local deste arquivo;
 
+* ``testar_doc.py``: um script para executar doctests parando na primeira
+  falha; bom para orientar a solução do problema passo a passo;
+
 * ``tombola_bug.py``: uma implementação da tômbola com uma falha que você
   deverá diagnosticar e consertar; copie e edite sua cópia local deste
   arquivo;
 
-* ``testar_doc.py``: um script para executar doctests parando na primeira
-  falha; bom para orientar a solução do problema passo a passo;
+* ``tombola_bonus.rst``: uma questão mais avançada, para você considerar
+  depois que tiver terminado esta lista (se sobrar tempo);
 
 .. _exercicios/tombola: https://github.com/oturing/oopy/tree/master/exercicios/tombola
 
@@ -71,18 +74,7 @@ Execute os testes deste arquivo agora. Todos os testes acima devem passar.
 
 .. _exercicios/tombola/tombola.py: https://github.com/oturing/oopy/blob/master/exercicios/tombola/tombola.py
 
-2.1 Uma tômbola com um defeito sutil
-====================================
-
-No arquivo `exercicios/tombola/tombola_bug.py`_ há uma implementação de
-tômbola com método ``__init__`` que permite carregar a tômbola com itens
-no momento da instanciação. O módulo ``tombola_bug`` contém doctests
-embutidos. Use o comanto ``python -m doctest tombola_bug.py`` para executar
-os testes, depois leia o texto e o código para resolver o problema proposto.
-
-.. _exercicios/tombola/tombola_bug.py: https://github.com/oturing/oopy/blob/master/exercicios/tombola/tombola.py
-
-2.2. Injeção de dependência para facilitar testes
+2.1. Injeção de dependência para facilitar testes
 =================================================
 
 O que é injeção de dependência
@@ -150,14 +142,14 @@ Quando seu exercício estiver pronto, esses testes deverão passar::
 Note que os itens deverão ser devolvidos na ordem ``[30, 40, 10, 20]`` que é
 o inverso da ordem em que foram carregados, porém com os pares trocados.
 
-2.3. Tômbola iterável
+2.2. Tômbola iterável
 =====================
 
-Implemente na tômbola modificada pelo exercício 2.2. a interface **Iterable**.
+Implemente na tômbola modificada pelo exercício 2.1 a interface **Iterable**.
 Relembrando: basta implementar o um método de instância ``__iter__`` que
 devolva um iterador ou um gerador.
 
-Repare fizemos a injeção de dependência no exercício 2.2 exatamente para
+Repare fizemos a injeção de dependência no exercício 2.1 exatamente para
 facilitar os testes neste exercício.
 
 Ao concluir este exercício, este teste deverá passar::
@@ -180,3 +172,15 @@ Bônus
 resolvê-la.)
 
 Leia o texto do arquivo ``tombola_bonus.rst`` e responda à questão colocada.
+
+2.3. Uma tômbola com um defeito sutil
+====================================
+
+No arquivo `exercicios/tombola/tombola_bug.py`_ há uma implementação de
+tômbola com método ``__init__`` que permite carregar a tômbola com itens
+no momento da instanciação. O módulo ``tombola_bug`` contém doctests
+embutidos. Use o comanto ``python -m doctest tombola_bug.py`` para executar
+os testes, depois leia o texto e o código para resolver o problema proposto.
+
+.. _exercicios/tombola/tombola_bug.py: https://github.com/oturing/oopy/blob/master/exercicios/tombola/tombola.py
+
