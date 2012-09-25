@@ -5,7 +5,7 @@ class Carta(object):
         self.valor = valor
         self.naipe = naipe
     def __repr__(self):
-        return '<%s de %s>' % (self.valor, self.naipe)
+        return 'Carta(%r, %r)' % (self.valor, self.naipe)
 
     @classmethod
     def todas(cls):
@@ -15,10 +15,8 @@ class Carta(object):
 class Baralho(object):
 
     def __init__(self):
-        self.cartas = Cartas.todas()
+        self.cartas = Carta.todas()
     def __len__(self):
         return len(self.cartas)
     def __getitem__(self, pos):
         return self.cartas[pos]
-    def __setitem__(self, pos, valor):
-        self.cartas[pos] = valor
