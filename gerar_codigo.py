@@ -11,6 +11,13 @@ langs = {
     '.c':'c',
     '.py': 'python',
     '.java': 'java'}
+    
+TOPO = '''
+.. contents:: Índice
+
+'''
+
+print TOPO
 
 for path_arq in glob('exemplos/*.*'):
     _, nome_arq = os.path.split(path_arq)
