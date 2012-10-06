@@ -40,7 +40,7 @@ class Vetor(object):
             >>> pos = Vetor(2, 1)
             >>> vel = Vetor(2, 4)
             >>> pos + vel
-            Vetor(3, 4)
+            Vetor(4, 5)
         '''
         dx = self.x + v2.x
         dy = self.y + v2.y

@@ -36,6 +36,8 @@ O que tem nessa tômbola?
 Obviamente tem o os itens da tômbola ``t``... Porquê isso aconteceu?
 """
 
+from random import shuffle
+
 class Tombola(object):
     '''IMPLEMENTACAO COM BUG!!!'''
 
@@ -44,8 +46,12 @@ class Tombola(object):
     def carregar(self, seq):
         self.itens.extend(seq)
 
+    def carregada(self):
+        return bool(self.itens)
+
+    def misturar(self):
+        shuffle(self.itens)
+
     def sortear(self):
         return self.itens.pop()
 
-    def carregada(self):
-        return bool(self.itens)
