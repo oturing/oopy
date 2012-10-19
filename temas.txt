@@ -1,0 +1,36 @@
+1. Introdução: explorando objetos nativos
+
+1. Terminologia básica de OO no jargão do Python
+
+1. Regras de escopo; atributos de classes x instâncias
+
+5. Polimorfismo e duck typing: conceitos e exemplos
+
+4. Encapsulamento: filosofia, getters/setters, propriedades
+
+2. Herança múltipla: conceito e exemplo simples
+
+2. Exemplos de APIs com herança múltipla: Tkinter GUI
+
+5. Sobrecarga de operadores: conceito e exemplos simples
+
+3. Sequências, iteráveis e geradores
+
+5. Exemplos de uso de sobrecarga de operadores: Vetor, Bunch, Django ORM e Tkinter GUI
+
+3. Protocolos (interfaces informais)
+
+ . Funções como objetos e objetos invocáveis
+
+ . Classes abstratas
+
+ . Decoradores de métodos e de classes
+
+ . Exemplos de APIs com herança múltipla: Django generic views
+
+ . Descritores de atributos
+
+ . Exemplo de API com descritores: Django models
+
+7. Alguns padrões de projeto e sua aplicação em Python
+
