@@ -12,11 +12,11 @@ Instanciar e contar::
 Acessar cartas::
 
   >>> b[0]
-  Carta('2', 'espadas')
+  Carta('2', 'paus')
   >>> b[-2:]
-  [Carta('K', 'copas'), Carta('A', 'copas')]
+  [Carta('K', 'espadas'), Carta('A', 'espadas')]
   >>> for carta in b[:3]: print carta
-  Carta('2', 'espadas')
-  Carta('3', 'espadas')
-  Carta('4', 'espadas')
+  Carta('2', 'paus')
+  Carta('3', 'paus')
+  Carta('4', 'paus')
 
