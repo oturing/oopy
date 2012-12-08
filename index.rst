@@ -34,6 +34,22 @@ cao2.py
    :linenos:
    :tab-width: 4
 
+carta.py
+--------
+
+.. literalinclude:: exemplos/carta.py
+   :language: python
+   :linenos:
+   :tab-width: 4
+
+carta_ord.py
+------------
+
+.. literalinclude:: exemplos/carta_ord.py
+   :language: python
+   :linenos:
+   :tab-width: 4
+
 frozendate.py
 -------------
 

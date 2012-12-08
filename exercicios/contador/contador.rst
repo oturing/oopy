@@ -71,7 +71,8 @@ No Windows, isso deve funcionar usando ``cls`` em vez de ``clear``, desde que
 o caminho até o executável ``python`` esteja no seu ``PATH`` (os instaladores
 de Python da ActiveState fazem essa gentileza para você automaticamente).
 
-Uma outra opção, se você estiver utilizando um linux ou macos é utilizar o comando "watch" para ter um feedback constante no terminal:
+Uma outra opção, se você estiver utilizando um Linux ou MacOS X é utilizar o 
+comando "watch" para ter um feedback constante no terminal:
 
     $ watch python testar_doc.py contador.rst
 
