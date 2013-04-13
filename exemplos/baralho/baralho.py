@@ -13,9 +13,5 @@ class Baralho(object):
     def __getitem__(self, pos):
         return self.cartas[pos]
 
-    def __setitem__(self, pos, valor):
-        self.cartas[pos] = valor
-
-
 
 

@@ -19,9 +19,16 @@ Método da classe::
     >>> monte[-3:]
     [Carta('Q', 'espadas'), Carta('K', 'espadas'), Carta('A', 'espadas')]
 
-Ordenação::
+Equivalência::
 
     >>> as_espadas = Carta('A', 'espadas')
+    >>> as_espadas == Carta('A', 'espadas')
+    True
+    >>> as_espadas != Carta('7', 'ouros')
+    True
+
+Ordenação::
+
     >>> as_copas = Carta('A', 'copas')
     >>> rei = Carta('K', 'espadas')
     >>> dois = Carta('2', 'paus')
@@ -39,26 +46,18 @@ Ordenação::
     False
     >>> dois < as_copas  # automagico
     True
-
-
-Equivalência::
-
-    >>> as_espadas == Carta('A', 'espadas')
+    >>> dois < as_espadas
     True
-    >>> as_espadas != dois
+    >>> as_copas <= as_espadas  # automagico
+    True
+    >>> as_copas <= Carta('A', 'copas')  # automagico
     True
 
 
 Ordenação total::
 
-    >>> dois > as_espadas
+    >>> dois >= as_espadas
     False
-    >>> dois < as_espadas
-    True
-    >>> as_copas < as_espadas
-    True
-    >>> Carta('K', 'copas') < Carta('A', 'ouros')
-    True
 
 Lucro::
 
@@ -89,6 +88,7 @@ class Carta(object):
     def todas(cls):
         return [cls(v, n) for n in cls.naipes
                           for v in cls.valores]
+
     def __eq__(self, outra):
         return ((self.valor, self.naipe) ==
                 (outra.valor, outra.naipe))

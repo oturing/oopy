@@ -5,7 +5,7 @@
 baralho.py
 ----------
 
-.. literalinclude:: exemplos/baralho.py
+.. literalinclude:: exemplos/baralho/baralho.py
    :language: python
    :linenos:
    :tab-width: 4
@@ -13,7 +13,23 @@ baralho.py
 baralho_formal.py
 -----------------
 
-.. literalinclude:: exemplos/baralho_formal.py
+.. literalinclude:: exemplos/baralho/baralho_formal.py
+   :language: python
+   :linenos:
+   :tab-width: 4
+
+carta.py
+--------
+
+.. literalinclude:: exemplos/baralho/carta.py
+   :language: python
+   :linenos:
+   :tab-width: 4
+
+carta_ord.py
+------------
+
+.. literalinclude:: exemplos/baralho/carta_ord.py
    :language: python
    :linenos:
    :tab-width: 4
@@ -26,29 +42,22 @@ cao.py
    :linenos:
    :tab-width: 4
 
-cao2.py
--------
-
-.. literalinclude:: exemplos/cao2.py
-   :language: python
-   :linenos:
-   :tab-width: 4
-
-carta.py
---------
-
-.. literalinclude:: exemplos/carta.py
-   :language: python
-   :linenos:
-   :tab-width: 4
-
-carta_ord.py
+cao_mixin.py
 ------------
 
-.. literalinclude:: exemplos/carta_ord.py
+.. literalinclude:: exemplos/cao_mixin.py
    :language: python
    :linenos:
    :tab-width: 4
+
+cao_abc.py
+------------
+
+.. literalinclude:: exemplos/cao_abc.py
+   :language: python
+   :linenos:
+   :tab-width: 4
+
 
 frozendate.py
 -------------
