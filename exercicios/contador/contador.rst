@@ -28,7 +28,7 @@ Material necessário
 -------------------
 
 Além do interpretador Python e seu editor favorito, você vai precisar de
-três arquivos que estão no diretório `exercicios/contador`_ no repositório `oturing/oopy`_ no GitHub:
+três arquivos que estão no diretório `exercicios/contador`_ no repositório `pythonprobr/oopy`_ no GitHub:
 
 * ``contador.rst``: este arquivo que você está lendo agora; ele contém
   doctests além de instruções;
@@ -40,9 +40,9 @@ três arquivos que estão no diretório `exercicios/contador`_ no repositório `
   parando na primeira falha; útil para orientar a solução do problema passo a
   passo;
 
-.. _exercicios/contador: https://github.com/oturing/oopy/tree/master/exercicios/contador
+.. _exercicios/contador: https://github.com/pythonprobr/oopy/tree/master/exercicios/contador
 
-.. _oturing/oopy: https://github.com/oturing/oopy
+.. pythonprobr/oopy: https://github.com/pythonprobr/oopy
 
 Procedimento
 ------------
